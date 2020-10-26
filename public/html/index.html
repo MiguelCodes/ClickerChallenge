@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <div class="stylishdiv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Factions Online</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <p class="topleft"><a href="/info">Info<a/></p>
+    <h1 align="center" class="title">Factions Online</h1>
+    <i><h3 id="reset">Reset countdown displayed here</h3></i>
+    <hr class="medium">
+  </head>
+  <body align="center">
+    <p class="file" style='display:none;'>index</p>
+    <br>
+    <br>
+    <br>
+    <input type="text" placeholder="Username" id="usernameinput"></input>
+    <br>
+    <br>
+    <input type="password" placeholder="Password" id="passwordinput"></input>
+    <br>
+    <br>
+    <br>
+    <button onclick="start();">Start Game</button>
+    <p id="validnamecheck"><i>Must enter <b>valid</b> username and password!</i></p>
+    <br>
+    <p>Or</p>
+    <br>
+    <a href="/leaderboard" target="_blank"><button>Go to leaderboard</button></a>
+    <br>
+    <br>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+  </div>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Factions Online</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <p class="topleft"><a href="https://www.patreon.com/catr3kd" target="new">Patreon<a/></p>
+    <div class="topright">
+    <br>
+    <button onclick="save();" style="border:3px solid green;">Save Data</button>
+    <br>
+    <br>
+    <button onclick="save(); deleteCookie('username'); deleteCookie('password'); location.reload();" style="border:3px solid red;">Log Out</button>
+    <br>
+    <br>
+    <a href="/leaderboard" target="_blank"><button>Leaderboard</button></a>
+    </div>
+    <h1 align="center" class="title">Factions Online</h1>
+    <i><h3 id="reset">Reset countdown displayed here</h3></i>
+    <i><p id="usermoney"></p></i>
+    <i><p id="mpc"></p></i> <i><p id="cps"></p></i> <i><p id="bps"></p></i><i><p id="eps"></p></i>
+    <hr class="medium">
+  </head align="center">
+  <body align="center">
+    <p class="file" style='display:none;'>game</p>
+    <br>
+    <br>
+    <button id="clicky" onclick="clickButton();">Click!</button>
+    <br>
+    <br>
+    <button onclick="extraClicks();">Extra Clicks - $100</button>
+    <br>
+    <br>
+    <button onclick="superClicks();">Super Clicks - $1,000</button>
+    <br>
+    <br>
+    <button onclick="autoClicker();">Autoclicker - $1,000</button>
+    <br>
+    <br>
+    <button onclick="superClicker();">Superclicker - $10,000</button>
+    <br>
+    <br>
+    <button onclick="clickerBuyer();">Autoclicker Buyer - $1,000,000</button>
+    <br>
+    <br>
+    <button onclick="extraBuyer();">Extra Clicks Buyer - $10,000,000</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

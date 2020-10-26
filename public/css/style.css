@@ -1,0 +1,129 @@
+html{
+  font-family: 'Roboto Mono', Roboto, monospace;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  height: 100%;
+}
+
+.title{
+  animation-name: bigsmall;
+  animation-duration: 3s;
+  animation-iteration-count:infinite;
+}
+
+.medium{
+  width: 350px;
+  border-radius: 4px;
+  border: 3px solid black;
+  height: 2px;
+}
+
+@keyframes bigsmall {
+  50% {transform: scale(1.15); letter-spacing: 1px;};
+}
+
+input[type=text]{
+  text-align: center;
+  border-radius: 6px;
+  width: 204px;
+  border: 3px solid black;
+  padding: 6px;
+}
+
+input[type=password]{
+  text-align: center;
+  border-radius: 6px;
+  width: 204px;
+  border: 3px solid black;
+  padding: 6px;
+}
+
+#validnamecheck{
+  display: none;
+  text-decoration: underline;
+}
+
+button {
+  background-color: white;
+  outline: 0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  border: 3px solid black;
+  width: 220px;
+}
+
+button:hover {
+  transform: scale(1.15);
+}
+
+.place:nth-of-type(1) {
+  box-shadow: 0px 8px 2px 0px rgba(0,0,0,0.25);
+  padding: 4px 16px 4px 16px;
+  border-radius: 6px;
+  border: 2px solid #FFD700;
+  box-sizing: border-box;
+	outline: none;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.place:nth-of-type(2) {
+  box-shadow: 0px 8px 2px 0px rgba(0,0,0,0.25);
+  padding: 4px 16px 4px 16px;
+  border-radius: 6px;
+  border: 2px solid #C0C0C0;
+  box-sizing: border-box;
+	outline: none;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.place:nth-of-type(3) {
+  box-shadow: 0px 8px 2px 0px rgba(0,0,0,0.25);
+  padding: 4px 16px 4px 16px;
+  border-radius: 6px;
+  border: 2px solid #cd7f32;
+  box-sizing: border-box;
+	outline: none;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.place:nth-of-type(n+4){
+  box-shadow: 0px 8px 2px 0px rgba(0,0,0,0.25);
+  padding: 4px 16px 4px 16px;
+  border-radius: 6px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+	outline: none;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topleft {
+  position: absolute;
+  margin-top: -22px;
+  left: 2px;
+  font-size: 14px;
+}
+
+.toright {
+  position: absolute;
+  top: 0px;
+  right: -100%;
+  font-size: 14px;
+}
+
+a{
+  color: #000000;
+  text-decoration: none;
+}
+
